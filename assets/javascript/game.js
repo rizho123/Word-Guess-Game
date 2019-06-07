@@ -55,11 +55,19 @@ function complete() {
         userWins++;
         reset()
         document.getElementById("wins").innerHTML = " " + userWins;
+        document.getElementById("status").innerHTML = "You win!";
+        setTimeout(function(){
+            document.getElementById("status").innerHTML = "Press any key to begin!";
+        }, 3000)
 
     } else if (guessRemain === 0) {
         userLosses++;
         reset()
         document.getElementById("losses").innerHTML = " " + userLosses;
+        document.getElementById("status").innerHTML = "You lose!";
+        setTimeout(function(){
+            document.getElementById("status").innerHTML = "Press any key to begin!";
+        }, 3000)
     }
     document.getElementById("currentword").innerHTML = "  " + blankPlacer.join(" ");
     document.getElementById("gremain").innerHTML = " " + guessRemain;
