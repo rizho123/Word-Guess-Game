@@ -1,0 +1,124 @@
+body {
+    width: 100%;
+    background: rgb(0, 0, 0);
+    
+}
+
+footer {
+    background-color: #000000;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 5px solid #ffffff;
+    text-align: center;
+    color: white;
+}
+
+.footer {
+    padding-top: 10px;
+    font-family: Allerta Stencil;
+    background: url("../images/blueplasma.gif");
+    background-size: 100%;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right:10%;
+    padding: 15px;
+}
+
+h2, h3 {
+    font-family: Righteous;
+    background: url("../images/plasma2.gif");
+    background-position: center;
+    background-size: 20%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 2px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+    padding: 20px;
+}
+
+h4 {
+    padding: 10px;
+}
+
+.scores {
+    font-size: 25px;
+    font-family: Poiret One;
+    text-shadow: 0 0 4px #ff0055, 2px 2px #e100ff7e, 4px 4px #00ffdd7e;
+}
+
+#W, #G {
+    font-family: Righteous;
+    color: #ffffff;
+    background: url("../images/explosion.gif");
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px;
+
+}
+
+#ord, #uess {
+    font-family: Baloo;
+    color: white;
+    background: url("../images/plasma.gif");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 2px;
+    
+}
+
+
+.hidden {
+    background-color: red;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.514);
+    margin-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px #000000;
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#wins, #losses, #gremain, #lguessed {
+    border: solid rgb(0, 0, 0) 1px;
+    padding-left: 3px;
+    padding-right:3px;
+    background-color: rgba(255, 255, 255, 0.404); 
+    
+}
+
+.wallpaper {
+    background-image: url("../images/spaceWP.jpg");
+    background-size: 100%;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
