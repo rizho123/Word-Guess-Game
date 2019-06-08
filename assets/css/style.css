@@ -5,14 +5,14 @@ body {
 }
 
 footer {
-    background-color: #000000;
+    background-color: #00000057;
     height: 40px;
     width: 100%;
     position: fixed;
     bottom: 0;
-    border-top: 1px solid #ffffff;
     text-align: center;
     color: white;
+    font-size: 20px;
 }
 
 .footer {
@@ -34,7 +34,7 @@ h1 {
     padding: 15px;
 }
 
-h2, h3 {
+h2 {
     font-family: Righteous;
     background: url("../images/plasma2.gif");
     background-position: center;
@@ -49,9 +49,14 @@ h2 {
     font-size: 50px;
 }
 
+#caption {
+    font-size: 25px;
+}
+
 h3 {
     font-size: 30px;
     padding: 20px;
+    letter-spacing: 15px;
 }
 
 h4 {
@@ -65,7 +70,7 @@ h4 {
     text-shadow: 0 0 4px #ff0055, -4px 0 3px #e100ff7e, 4px 0 3px #ff9900;
 }
 
-#W, #G {
+#W, #G, h3, #caption {
     font-family: Righteous;
     color: #ffffff;
     background: url("../images/explosion.gif");
@@ -73,7 +78,6 @@ h4 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 15px;
-
 }
 
 #ord, #uess {
@@ -140,3 +144,4 @@ h4 {
     outline: 1px solid #ffffff67;
     outline-offset: -4px;
 }
+
