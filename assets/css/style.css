@@ -10,7 +10,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    border-top: 5px solid #ffffff;
+    border-top: 1px solid #ffffff;
     text-align: center;
     color: white;
 }
@@ -24,7 +24,6 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 h1 {
     font-size: 100px;
@@ -62,7 +61,8 @@ h4 {
 .scores {
     font-size: 25px;
     font-family: Poiret One;
-    text-shadow: 0 0 4px #ff0055, 2px 2px #e100ff7e, 4px 4px #00ffdd7e;
+    color: #ffffff;
+    text-shadow: 0 0 4px #ff0055, -4px 0 3px #e100ff7e, 4px 0 3px #ff9900;
 }
 
 #W, #G {
@@ -77,16 +77,14 @@ h4 {
 }
 
 #ord, #uess {
-    font-family: Baloo;
+    font-family: Righteous;
     color: white;
     background: url("../images/plasma.gif");
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #ffffff;
-    -webkit-text-stroke-width: 2px;
-    
+    -webkit-text-stroke-width: 2px; 
 }
-
 
 .hidden {
     background-color: red;
@@ -99,17 +97,19 @@ h4 {
     margin-right: 20%;
     margin-bottom: 5px;
     text-align: center;
-    box-shadow: 0 0 5px #000000;
+    box-shadow: 0 0 8px #ffffff;
     border-radius: 15px;
-    padding: 20px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 10px;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 #wins, #losses, #gremain, #lguessed {
-    border: solid rgb(0, 0, 0) 1px;
-    padding-left: 3px;
-    padding-right:3px;
+    border: solid rgba(0, 0, 0, 0.404) 1px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #00000075;
+    padding-left: 8px;
+    padding-right:8px;
     background-color: rgba(255, 255, 255, 0.404); 
     
 }
@@ -117,8 +117,26 @@ h4 {
 .wallpaper {
     background-image: url("../images/spaceWP.jpg");
     background-size: 100%;
-    border-top: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.imageboard {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+#image {
+    width: 100%;
+    max-width: 700px; 
+    height: 200px; 
+    object-fit: cover;
+    box-shadow: 0 2px 3px #000000;
+    border-radius: 6px;
+    outline: 1px solid #ffffff67;
+    outline-offset: -4px;
 }
