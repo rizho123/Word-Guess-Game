@@ -10,6 +10,7 @@ var guessRemain = 10;
 var wrongGuess = [];
 
 
+
 function Game() {
     currentWord = words[Math.floor(Math.random() * words.length)];
     wordLetters = currentWord.split("");
@@ -58,7 +59,15 @@ function checkLetters(letter) {
             wordL = true;
         }
     }
-    if (wordL) {
+    if (!/^[a-zA-Z]*$/g.test(letter)) {
+        document.getElementById("status").innerHTML = "Characters from A-Z only!"
+        setTimeout(function(){
+            document.getElementById("status").innerHTML = "Press any key to begin!"
+        }, 1000)
+        return;
+        }
+    
+    else if (wordL) {
         for (var i = 0; i < blanks; i++) {
             if (currentWord[i] === letter) {
                 blankPlacer[i] = letter;
@@ -70,6 +79,8 @@ function checkLetters(letter) {
         guessRemain--;
     }
 }
+
+
 
 function complete() {
     console.log(wordLetters, blankPlacer);
@@ -104,6 +115,15 @@ Game()
 
 document.onkeyup = function (event) {
     var guesses = String.fromCharCode(event.keyCode).toLowerCase();
+    console.log(guesses)
+    
+    if (wrongGuess.includes(guesses)) {
+        document.getElementById("status").innerHTML = "You've already guessed that letter!"
+        setTimeout(function(){
+            document.getElementById("status").innerHTML = "Press any key to begin!"
+        }, 1000)
+        return;
+    }
     checkLetters(guesses);
     complete()
     document.getElementById("lguessed").innerHTML = "  " + wrongGuess.join(" ");
