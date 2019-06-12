@@ -22,7 +22,7 @@
     - An image board that will display an appropriate image based on the current word (if correctly guessed).
 ```
 
-<img width = 900 src = "./assets/images/pagescreen.png">
+<img width = 900 src = "https://github.com/rizho123/Word-Guess-Game/blob/master/assets/images/pagescreen.PNG?raw=true">
 
 ## Example Win Screen
 ```
@@ -30,4 +30,4 @@
         - Status will change to "You win!"
         - Image board will show a picture related to the guessed word.
 ```
-<img width = 900 src = "./assets/images/winscreen.png">
+<img width = 900 src = "https://github.com/rizho123/Word-Guess-Game/blob/master/assets/images/winscreen.PNG?raw=true">
