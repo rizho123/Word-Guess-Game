@@ -1,1 +1,65 @@
-My Page
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Baloo|Monoton|Poiret+One|Righteous&display=swap" rel="stylesheet">
+    <!--<link rel="icon" href=>-->
+</head>
+<body>
+    <video autoplay muted loop id="bgroundVideo">
+        <source src="./assets/images/Other/wallpaper.mp4" type="video/mp4">
+        Your browser doesn't support HTML5 videos.
+    </video>
+    <div class="header">
+        <h1><span id="W">W</span><span id="ord">ord</span> <span id="G">G</span><span id="uess">uess</span></h1>
+    </div>
+        <div class="container">
+            <h2 id="status">Press any key to begin!</h2>
+            <div class="imageboard">
+                <img id="image" src = "./assets/images/imageboard/starterpic.gif">
+                <h4 id="caption"></h4>
+            </div>
+            <div>
+                <h3 id="currentword"></h3>
+            </div>
+            <div class="urecord">
+                <div class="scores">
+                    <h4>Guesses Remaining:
+                        <span id="gremain"></span>
+                    </h4>
+                </div>
+
+                <div class="scores">
+                    <h4>Letters Guessed:
+                        <span id="lguessed"></span>
+                    </h4>
+                </div>
+
+                <div class="scores">
+                    <h4>W:
+                        <span id="wins"></span>
+                    </h4>
+                </div>
+
+                <div class="scores">
+                    <h4>L:
+                        <span id="losses"></span>
+                    </h4>
+                </div>
+
+            </div>
+    
+        <script type="text/javascript" src="assets\javascript\game.js"></script>
+        </div>
+    
+
+    <footer>
+        <h6 class="footer">Copyright ©</h3>
+    </footer>
+
+</body>
+</html>
